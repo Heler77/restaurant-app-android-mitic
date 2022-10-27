@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">restaurateAppMinTicC4</string>
+    <string name="tv_restaurante">Restaurant</string>
+    <string name="tv_menu">Menu</string>
+    <string name="tv_hamburguesa">Burgers</string>
+    <string name="tv_ver_mas">Learn More</string>
+    <string name="tv_sandwich">Sandwiches</string>
+    <string name="tv_pizza">Pizzas</string>
+
+</resources>
