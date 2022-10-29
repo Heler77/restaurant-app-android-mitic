@@ -6,5 +6,9 @@
     <string name="tv_ver_mas">Learn More</string>
     <string name="tv_sandwich">Sandwiches</string>
     <string name="tv_pizza">Pizzas</string>
+    <string name="txt_usuario">user</string>
+    <string name="txt_constrasena">Password</string>
+    <string name="alert_title">Alert</string>
+    <string name="alert_text">user or password are wrong</string>
 
 </resources>

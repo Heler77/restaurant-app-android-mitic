@@ -1,196 +1,246 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    >
+
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="180dp"
-        android:orientation="vertical">
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
 
-        <ImageView
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/barra"
+            android:background="@color/cardview_light_background"
             android:layout_width="match_parent"
-            android:layout_height="165dp"
-            android:src="@drawable/fondo_restaurante" />
+            android:layout_height="?attr/actionBarSize"
+            app:titleTextColor="@color/black"
+            android:elevation="2dp"
+            app:popupTheme="@style/Theme.AppCompat.DayNight.DarkActionBar"
+            android:theme="@style/Theme.AppCompat.DayNight.DarkActionBar"
+            />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="165dp"
+                android:src="@drawable/fondo_restaurante" />
+
+            <TextView
+                android:id="@+id/textViewTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-150dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/tv_restaurante"
+                android:textColor="#FFFFFF"
+                android:textSize="45dp"
+                android:textStyle="bold" />
+        </LinearLayout>
 
         <TextView
-            android:id="@+id/textViewTitle"
+            android:id="@+id/textViewMenu"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="-150dp"
-            android:layout_weight="1"
+            android:layout_marginTop="0dp"
+            android:layout_marginBottom="10dp"
             android:gravity="center"
-            android:text="@string/tv_restaurante"
-            android:textColor="#FFFFFF"
+            android:text="@string/tv_menu"
             android:textSize="45dp"
             android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="500dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="125dp"
+                android:layout_marginBottom="10dp">
+
+                <LinearLayout
+                    android:layout_width="10dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:gravity="end"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textViewHamburgesa"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="0dp"
+                        android:paddingLeft="10dp"
+                        android:paddingTop="20dp"
+                        android:paddingBottom="20dp"
+                        android:text="@string/tv_hamburguesa"
+                        android:textSize="35dp"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:layout_width="150dp"
+                        android:layout_height="40dp"
+                        android:layout_marginRight="10dp"
+                        android:text="@string/tv_ver_mas"></Button>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="10dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/hamburguesa"
+
+                        >
+
+                    </ImageView>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="125dp"
+                android:layout_marginBottom="10dp">
+
+                <LinearLayout
+                    android:layout_width="10dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:gravity="end"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textViewPizza"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="0dp"
+                        android:paddingLeft="10dp"
+                        android:paddingTop="20dp"
+                        android:paddingBottom="20dp"
+                        android:text="@string/tv_pizza"
+                        android:textSize="35dp"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:layout_width="150dp"
+                        android:layout_height="40dp"
+                        android:layout_marginRight="10dp"
+                        android:text="@string/tv_ver_mas"></Button>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="10dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/pizza"
+
+                        >
+
+                    </ImageView>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="125dp"
+                android:layout_marginBottom="0dp">
+
+                <LinearLayout
+                    android:layout_width="10dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:gravity="end"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textViewSandwich"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="0dp"
+                        android:paddingLeft="10dp"
+                        android:paddingTop="20dp"
+                        android:paddingBottom="20dp"
+                        android:text="@string/tv_sandwich"
+                        android:textSize="35dp"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:layout_width="150dp"
+                        android:layout_height="40dp"
+                        android:layout_marginRight="10dp"
+                        android:text="@string/tv_ver_mas"></Button>
+
+                    <com.google.android.material.floatingactionbutton.FloatingActionButton
+                        android:id="@+id/floatingActionButton2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:clickable="true"
+                        app:srcCompat="@android:drawable/ic_menu_revert" />
+
+                    <com.google.android.material.floatingactionbutton.FloatingActionButton
+                        android:id="@+id/floatingActionButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:clickable="true"
+                        app:srcCompat="@android:drawable/ic_menu_revert" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="10dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/sandwich"
+
+                        >
+
+                    </ImageView>
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
     </LinearLayout>
 
-    <TextView
-        android:id="@+id/textViewMenu"
-        android:layout_width="match_parent"
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabatras"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="0dp"
-        android:layout_marginBottom="10dp"
-        android:gravity="center"
-        android:text="@string/tv_menu"
-        android:textSize="45dp"
-        android:textStyle="bold" />
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="500dp"
-        android:orientation="vertical">
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="135dp"
-            android:layout_marginBottom="20dp">
-
-            <LinearLayout
-                android:layout_width="10dp"
-                android:layout_height="match_parent"
-                android:layout_weight="2"
-                android:gravity="end"
-                android:orientation="vertical">
-
-                <TextView
-                    android:id="@+id/textViewHamburgesa"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="0dp"
-                    android:paddingLeft="10dp"
-                    android:paddingTop="20dp"
-                    android:paddingBottom="20dp"
-                    android:text="@string/tv_hamburguesa"
-                    android:textSize="35dp"
-                    android:textStyle="bold" />
-
-                <Button
-                    android:layout_width="150dp"
-                    android:layout_height="50dp"
-                    android:layout_marginRight="10dp"
-                    android:text="@string/tv_ver_mas"></Button>
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="10dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1">
-
-                <ImageView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:src="@drawable/hamburguesa"
-
-                    >
-
-                </ImageView>
-            </LinearLayout>
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="135dp"
-            android:layout_marginBottom="20dp">
-
-            <LinearLayout
-                android:layout_width="10dp"
-                android:layout_height="match_parent"
-                android:layout_weight="2"
-                android:gravity="end"
-                android:orientation="vertical">
-
-                <TextView
-                    android:id="@+id/textViewPizza"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="0dp"
-                    android:paddingLeft="10dp"
-                    android:paddingTop="20dp"
-                    android:paddingBottom="20dp"
-                    android:text="@string/tv_pizza"
-                    android:textSize="35dp"
-                    android:textStyle="bold" />
-
-                <Button
-                    android:layout_width="150dp"
-                    android:layout_height="50dp"
-                    android:layout_marginRight="10dp"
-                    android:text="@string/tv_ver_mas"></Button>
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="10dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1">
-
-                <ImageView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:src="@drawable/pizza"
-
-                    >
-
-                </ImageView>
-            </LinearLayout>
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="135dp"
-            android:layout_marginBottom="20dp">
-
-            <LinearLayout
-                android:layout_width="10dp"
-                android:layout_height="match_parent"
-                android:layout_weight="2"
-                android:gravity="end"
-                android:orientation="vertical">
-
-                <TextView
-                    android:id="@+id/textViewSandwich"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="0dp"
-                    android:paddingLeft="10dp"
-                    android:paddingTop="20dp"
-                    android:paddingBottom="20dp"
-                    android:text="@string/tv_sandwich"
-                    android:textSize="35dp"
-                    android:textStyle="bold" />
-
-                <Button
-                    android:layout_width="150dp"
-                    android:layout_height="50dp"
-                    android:layout_marginRight="10dp"
-                    android:text="@string/tv_ver_mas"></Button>
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="10dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1">
-
-                <ImageView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:src="@drawable/sandwich"
-
-                    >
-
-                </ImageView>
-            </LinearLayout>
-
-        </LinearLayout>
-
-    </LinearLayout>
+        android:clickable="true"
+        app:srcCompat="@android:drawable/ic_menu_revert"
+        android:layout_gravity="bottom|end"
+        />
 
 
-</LinearLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+
+

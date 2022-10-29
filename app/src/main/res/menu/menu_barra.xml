@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/itmbuscar"
+        android:icon="@android:drawable/ic_search_category_default"
+        android:title="Buscar"
+        app:showAsAction="always"/>
+
+    <item
+        android:id="@+id/itmubicacion"
+        android:icon="@android:drawable/ic_dialog_map"
+        android:title="Ubicacion"
+        app:showAsAction="always"/>
+
+    <item
+        android:id="@+id/itmsalir"
+        android:icon="@android:drawable/ic_menu_close_clear_cancel"
+        android:title="Salir"
+        app:showAsAction="always"/>
+
+</menu>
