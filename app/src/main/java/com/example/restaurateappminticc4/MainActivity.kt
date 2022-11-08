@@ -24,10 +24,18 @@ class MainActivity : AppCompatActivity() {
             //Snackbar.make(view,  "configuracion de la snack bar", Snackbar.LENGTH_SHORT).show()
         }
 
-
-
-
     }
+
+    fun irAHambuerguesas (btnlogin: View) {
+        val menuHam = Intent( this,BurgerActivity::class.java )
+        startActivity(menuHam)
+    }
+
+    fun verOtros (btnlogin: View) {
+        val verOtro = Intent( this,NavDrawer ::class.java )
+        startActivity(verOtro)
+    }
+
 
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
         menuInflater.inflate(R.menu.menu_barra, menu)

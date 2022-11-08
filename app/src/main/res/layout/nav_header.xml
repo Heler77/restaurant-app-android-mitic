@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="180dp"
+    android:orientation="vertical"
+    android:background="@color/black"
+    >
+
+    <ImageView
+        android:id="@+id/imagennav"
+        android:layout_width="150dp"
+        android:layout_height="80dp"
+        android:layout_weight="1"
+        android:src="@drawable/fondo_restaurante"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Usuariox"
+        android:textSize="25dp"
+
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="usuariox@gmail.com"
+        android:textSize="25dp"
+
+        />
+
+
+</LinearLayout>

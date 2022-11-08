@@ -30,7 +30,7 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="180dp"
+            android:layout_height="120dp"
             android:orientation="vertical">
 
             <ImageView
@@ -95,7 +95,9 @@
                         android:layout_width="150dp"
                         android:layout_height="40dp"
                         android:layout_marginRight="10dp"
-                        android:text="@string/tv_ver_mas"></Button>
+                        android:text="@string/tv_ver_mas"
+                        android:onClick="irAHambuerguesas"
+                        ></Button>
                 </LinearLayout>
 
                 <LinearLayout
@@ -143,7 +145,9 @@
                         android:layout_width="150dp"
                         android:layout_height="40dp"
                         android:layout_marginRight="10dp"
-                        android:text="@string/tv_ver_mas"></Button>
+                        android:text="@string/tv_ver_mas"
+
+                        ></Button>
                 </LinearLayout>
 
                 <LinearLayout
@@ -155,7 +159,6 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:src="@drawable/pizza"
-
                         >
 
                     </ImageView>
@@ -193,6 +196,7 @@
                         android:layout_marginRight="10dp"
                         android:text="@string/tv_ver_mas"></Button>
 
+
                     <com.google.android.material.floatingactionbutton.FloatingActionButton
                         android:id="@+id/floatingActionButton2"
                         android:layout_width="match_parent"
@@ -224,7 +228,15 @@
                 </LinearLayout>
 
             </LinearLayout>
-
+            <Button
+                android:layout_width="190dp"
+                android:layout_height="40dp"
+                android:layout_marginRight="10dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:text="More Info"
+                android:onClick="verOtros"
+                ></Button>
         </LinearLayout>
 
 
